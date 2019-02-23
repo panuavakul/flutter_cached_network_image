@@ -282,8 +282,8 @@ class CachedNetworkImageState extends State<CachedNetworkImage>
             children.add(_transitionWidget(
               holder: holder,
               child: new Container(
-                height: widget.height ?? double.infinity,
-                width: widget.width ?? double.infinity,
+                height: widget.height,
+                width: widget.width,
                 child: _image(context, FileImage(holder.image.file)),
               ),
             ));
